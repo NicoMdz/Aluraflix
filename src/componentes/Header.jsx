@@ -17,12 +17,17 @@ const StyledButton = styled.button`
     text-align: center;
     border-color: white;
     padding: 10px 15px;
+    cursor: pointer;
+`
+ const StyledLogo = styled.img`
+    width: 168.45px;
+    height: 40px;
 `
 
 const Header = () => {
     return (
         <StyledHeader>
-            <img src={Logo} alt="Logo Aluraflix" />
+            <a href="#"><StyledLogo src={Logo}  alt="Logo Aluraflix" /></a>
             <StyledButton>Nuevo Video</StyledButton>
         </StyledHeader>
     )
