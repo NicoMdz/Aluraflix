@@ -1,18 +1,14 @@
-import Header from "./componentes/Header";
-import Banner from "./componentes/Banner";
-import Footer from "./componentes/Footer";
-import DefaultPage from "./componentes/DefaultPage";
+import Home from "./pages/Home";
 import MultipleItems from "./componentes/HomeCarousel/Carousel"
+import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-        <Header />
-        <Banner />
-        <MultipleItems />
-        <Footer />
-        {/* <DefaultPage /> */}
-    </div>
+    <Router>
+      <Routes>
+         <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 

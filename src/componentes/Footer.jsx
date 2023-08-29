@@ -8,6 +8,7 @@ const StyledFooter = styled.footer`
     justify-content: center;
     padding-top: 20px;
     height: 143px;
+    margin-top: 40px;
 `
 const StyledLogo = styled.img`
     width: 250px;
