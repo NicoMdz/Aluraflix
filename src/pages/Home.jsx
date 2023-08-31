@@ -11,7 +11,7 @@ const Home = (props) => {
       <>  
         <Header />
         <Banner />
-<CampoTexto />
+
         <Slider />
         <Slider />
         <Footer />

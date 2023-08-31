@@ -8,6 +8,7 @@ const StyledHeader = styled.header`
     background-color: black;
     align-items: center;
     padding: 20px 40px;
+    background-image: url("../assets/BannerMain.png");
 `
 const StyledButton = styled.button`
     font-size: 21px;
@@ -26,10 +27,12 @@ const StyledButton = styled.button`
 
 const Header = () => {
     return (
+        <>
         <StyledHeader>
             <a href="#"><StyledLogo src={Logo}  alt="Logo Aluraflix" /></a>
             <StyledButton>Nuevo Video</StyledButton>
         </StyledHeader>
+        </>
     )
 }
 
