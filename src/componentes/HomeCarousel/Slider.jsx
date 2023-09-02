@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import Slider from "react-slick";
-import "./Card.css"
+import VideoCard from "./VideoCard";
 
 export default class MultipleItems extends Component {
   render() {
@@ -10,18 +10,18 @@ export default class MultipleItems extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
-      arrows: true,
+      arrows: false,
       className: "card", 
     };
     return (
       <div>
         <h2> Front-End </h2>
-        <Slider  {...settings}>
+        <Slider {...settings}>
           <div>
-            <h3>1</h3>
+            <VideoCard />
           </div>
           <div>
-            <h3>2</h3>
+          <h3>2</h3>
           </div>
           <div>
             <h3>3</h3>

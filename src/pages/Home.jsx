@@ -2,18 +2,18 @@ import React from "react";
 import Header from "../componentes/Header";
 import Banner from "../componentes/Banner";
 import Footer from "../componentes/Footer";
-import Slider from "../componentes/HomeCarousel/Slider"
+import Carousel from "../componentes/HomeCarousel/Carousel";
 import CampoTexto from "../componentes/CampoTexto";
 
 
-const Home = (props) => {
+const Home = () => {
     return (
       <>  
         <Header />
         <Banner />
-
-        <Slider />
-        <Slider />
+        <CampoTexto />
+        <Carousel />
+        <Carousel />
         <Footer />
       </>  
     )
