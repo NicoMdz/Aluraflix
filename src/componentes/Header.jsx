@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components"
 import Logo from "../assets/LogoMain.png";
+import { Link } from "react-router-dom";
 
 const StyledHeader = styled.header`
     display: flex;
@@ -8,7 +9,7 @@ const StyledHeader = styled.header`
     background-color: black;
     align-items: center;
     padding: 20px 40px;
-    background-image: url("../assets/BannerMain.png");
+    border-bottom: 2px solid #2A7AE4;
 `
 const StyledButton = styled.button`
     font-size: 21px;
@@ -28,9 +29,10 @@ const StyledButton = styled.button`
 const Header = () => {
     return (
         <>
+        
         <StyledHeader>
-            <a href="#"><StyledLogo src={Logo}  alt="Logo Aluraflix" /></a>
-            <StyledButton>Nuevo Video</StyledButton>
+            <Link to="/"><a href="#"><StyledLogo src={Logo}  alt="Logo Aluraflix" /></a></Link>
+            <Link to="/nuevo-video"><StyledButton>Nuevo Video</StyledButton></Link>
         </StyledHeader>
         </>
     )

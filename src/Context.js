@@ -7,6 +7,9 @@ export const Provider = ({ children }) => {
     const values = {
         count: 5,
     };
+    function handleSubmit (valores) {
+        console.log("APPJS: ", valores)
+      }
 
     return (
         <Context.Provider value={values}>{children}</Context.Provider>
